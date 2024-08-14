@@ -37,6 +37,15 @@ export default {
       fontFamily: {
         cera: ["CeraRound", "sans-serif"],
       },
+      animation: {
+        fixed: "0.9s ease 0s normal both 1 running fixed",
+      },
+      keyframes: {
+        fixed: {
+          "0%": { top: "-100%" },
+          "100%": { top: "0" },
+        },
+      },
     },
   },
   plugins: [
