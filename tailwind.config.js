@@ -39,11 +39,16 @@ export default {
       },
       animation: {
         fixed: "0.9s ease 0s normal both 1 running fixed",
+        "move-y": "move-y 6s ease-in-out infinite",
       },
       keyframes: {
         fixed: {
           "0%": { top: "-100%" },
           "100%": { top: "0" },
+        },
+        "move-y": {
+          "0%, 100%": { transform: "translateY(20px)" },
+          "25%": { transform: "translateY(-20px)" },
         },
       },
     },

@@ -1,10 +1,13 @@
 import { Footer, Header } from "../components";
+import { HomeSection } from "../views";
 
 export const LayoutDefault = () => {
   return (
     <>
       <Header />
-      <main className="container mx-auto px-4"></main>
+      <main>
+        <HomeSection />
+      </main>
       <Footer />
     </>
   );
