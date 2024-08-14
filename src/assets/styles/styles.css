@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "CeraRound";
+  src: url("../fonts/CeraRoundThin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CeraRound";
+  src: url("../fonts/CeraRoundLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CeraRound";
+  src: url("../fonts/CeraRoundRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CeraRound";
+  src: url("../fonts/CeraRoundBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CeraRound";
+  src: url("../fonts/CeraRoundBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  @apply text-[#919ea4];
+}
