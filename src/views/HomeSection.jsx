@@ -45,7 +45,7 @@ export const HomeSection = () => {
           </div>
         </div>
         <div className="col-span-6 justify-self-center md:col-span-3">
-          <figure className="animate-move-y h-96">
+          <figure className="h-96 animate-move-y">
             <img className="h-full" src={HeroSvg} alt="" />
           </figure>
         </div>

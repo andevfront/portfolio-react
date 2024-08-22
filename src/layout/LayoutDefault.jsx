@@ -1,5 +1,5 @@
 import { Footer, Header } from "../components";
-import { HomeSection } from "../views";
+import { AboutSection, HomeSection } from "../views";
 
 export const LayoutDefault = () => {
   return (
@@ -7,6 +7,7 @@ export const LayoutDefault = () => {
       <Header />
       <main>
         <HomeSection />
+        <AboutSection />
       </main>
       <Footer />
     </>
