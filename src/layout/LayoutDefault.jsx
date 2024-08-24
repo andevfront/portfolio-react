@@ -1,5 +1,10 @@
 import { Footer, Header } from "../components";
-import { AboutSection, HomeSection, ResumeSection } from "../views";
+import {
+  AboutSection,
+  HomeSection,
+  PortfolioSection,
+  ResumeSection,
+} from "../views";
 
 export const LayoutDefault = () => {
   return (
@@ -9,6 +14,7 @@ export const LayoutDefault = () => {
         <HomeSection />
         <AboutSection />
         <ResumeSection />
+        <PortfolioSection />
       </main>
       <Footer />
     </>
