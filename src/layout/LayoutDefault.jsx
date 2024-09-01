@@ -1,6 +1,7 @@
 import { Footer, Header } from "../components";
 import {
   AboutSection,
+  ContactSection,
   HomeSection,
   PortfolioSection,
   ResumeSection,
@@ -15,6 +16,7 @@ export const LayoutDefault = () => {
         <AboutSection />
         <ResumeSection />
         <PortfolioSection />
+        <ContactSection />
       </main>
       <Footer />
     </>
