@@ -1,4 +1,4 @@
-import { Footer, Header } from "../components";
+import { Footer, GotTopButton, Header } from "../components";
 import {
   AboutSection,
   ContactSection,
@@ -18,6 +18,7 @@ export const LayoutDefault = () => {
         <PortfolioSection />
         <ContactSection />
       </main>
+      <GotTopButton />
       <Footer />
     </>
   );
