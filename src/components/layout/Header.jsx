@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-scroll";
+import { BsList } from "react-icons/bs";
 
-export const Header = () => {
+export const Header = ({ onOpen }) => {
   const [isSticky, setSticky] = useState(false);
 
   const handleScroll = () => {
@@ -36,7 +38,7 @@ export const Header = () => {
           >
             Ayelén
           </Link>
-          <nav>
+          <nav className="hidden lg:block">
             <ul className="flex items-center gap-7 font-semibold text-white">
               <li>
                 <Link
@@ -105,8 +107,15 @@ export const Header = () => {
               </li>
             </ul>
           </nav>
+          <button className="lg:hidden" onClick={onOpen}>
+            <BsList className="h-6 w-6 text-white" />
+          </button>
         </div>
       </header>
     </>
   );
+};
+
+Header.propTypes = {
+  onOpen: PropTypes.func.isRequired,
 };
