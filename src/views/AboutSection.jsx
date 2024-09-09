@@ -1,10 +1,7 @@
 import { FiDownload } from "react-icons/fi";
-import { FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiRedux } from "react-icons/si";
 import { ProfileImg } from "../assets/images";
 import { calculateAge } from "../helpers";
+import { TechIconsList } from "../components";
 
 export const AboutSection = () => {
   return (
@@ -69,44 +66,7 @@ export const AboutSection = () => {
             <h3 className="text-[20px] font-bold text-white">
               Tecnologías y herramientas
             </h3>
-            <div className="my-4 flex flex-wrap gap-6">
-              <div className="group flex flex-col items-center gap-1">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#E34F26] transition-shadow duration-300 ease-in-out group-hover:shadow-[0_0_10px_#E34F26]">
-                  <FaHtml5 className="h-8 w-8 text-white" />
-                </div>
-                <span>HTML</span>
-              </div>
-              <div className="group flex flex-col items-center gap-1">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#1572B6] transition-shadow duration-300 ease-in-out group-hover:shadow-[0_0_10px_#1572B6]">
-                  <FaCss3Alt className="h-8 w-8 text-white" />
-                </div>
-                <span>CSS</span>
-              </div>
-              <div className="group flex flex-col items-center gap-1">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#F7DF1E] transition-shadow duration-300 ease-in-out group-hover:shadow-[0_0_10px_#F7DF1E]">
-                  <IoLogoJavascript className="h-8 w-8 text-white" />
-                </div>
-                <span>Javascript</span>
-              </div>
-              <div className="group flex flex-col items-center gap-1">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#06B6D4] transition-shadow duration-300 ease-in-out group-hover:shadow-[0_0_10px_#06B6D4]">
-                  <RiTailwindCssFill className="h-8 w-8 text-white" />
-                </div>
-                <span>TailwindCSS</span>
-              </div>
-              <div className="group flex flex-col items-center gap-1">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#61DAFB] transition-shadow duration-300 ease-in-out group-hover:shadow-[0_0_10px_#61DAFB]">
-                  <FaReact className="h-8 w-8 text-white" />
-                </div>
-                <span>React</span>
-              </div>
-              <div className="group flex flex-col items-center gap-1">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#764ABC] transition-shadow duration-300 ease-in-out group-hover:shadow-[0_0_10px_#764ABC]">
-                  <SiRedux className="h-8 w-8 text-white" />
-                </div>
-                <span>Redux</span>
-              </div>
-            </div>
+            <TechIconsList />
           </div>
         </div>
       </div>
