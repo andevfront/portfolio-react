@@ -22,7 +22,7 @@ export const AboutSection = () => {
                 <img className="w-full object-cover" src={ProfileImg} alt="" />
               </figure>
               <div>
-                <h3 className="text-lg font-bold text-white">
+                <h3 className="text-[20px] font-bold text-white">
                   Información personal
                 </h3>
                 <ul className="mt-4">
@@ -66,7 +66,7 @@ export const AboutSection = () => {
             </div>
           </div>
           <div className="col-span-6 sm:col-span-3">
-            <h3 className="text-lg font-bold text-white">
+            <h3 className="text-[20px] font-bold text-white">
               Tecnologías y herramientas
             </h3>
             <div className="my-4 flex flex-wrap gap-6">

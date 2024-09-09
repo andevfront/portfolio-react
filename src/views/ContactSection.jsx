@@ -87,7 +87,7 @@ export const ContactSection = () => {
                   <textarea
                     id="message"
                     name="message"
-                    className="peer mx-2.5 mb-2.5 mt-5 block max-h-[200px] min-h-[130px] w-full resize-none appearance-none border-0 bg-transparent text-sm text-white focus:outline-none focus:ring-0"
+                    className="peer block max-h-[200px] min-h-[130px] w-full resize-none appearance-none border-0 bg-transparent px-2.5 pb-2.5 pt-5 text-sm text-white focus:outline-none focus:ring-0"
                     placeholder=" "
                     required
                   ></textarea>

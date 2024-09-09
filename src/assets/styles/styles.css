@@ -41,6 +41,21 @@ body {
   @apply text-[#919ea4];
 }
 
+body::-webkit-scrollbar,
+textarea::-webkit-scrollbar {
+  @apply w-2;
+}
+
+body::-webkit-scrollbar-thumb,
+textarea::-webkit-scrollbar-thumb {
+  @apply rounded-[6px] bg-main-500;
+}
+
+body::-webkit-scrollbar-track,
+textarea::-webkit-scrollbar-track {
+  @apply bg-[#0D182E];
+}
+
 nav > ul > li > a.active {
   @apply text-main-500 after:w-full;
 }
