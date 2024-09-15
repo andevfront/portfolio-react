@@ -18,10 +18,14 @@ export const HomeSection = () => {
             loop
           />
           <p className="mb-6 mt-5">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            itaque distinctio, neque assumenda, eius quaerat repellat
-            perspiciatis ex dolor sunt recusandae. Et tempore possimus corporis
-            id repudiandae? Aspernatur, eaque minima.
+            Soy una desarrolladora web frontend con experiencia en tecnologías
+            como HTML, CSS y JavaScript, especialmente enfocado en frameworks
+            modernos como React y herramientas como Tailwind CSS.
+            <br />
+            Mi experiencia incluye la implementación de sitios responsivos,
+            donde priorizo la claridad y legibilidad del código para facilitar
+            el mantenimiento y la colaboración en equipo. También tengo
+            habilidades en el manejo de APIs y la implementación de plugins.
           </p>
           <div className="flex items-center gap-3">
             <a
