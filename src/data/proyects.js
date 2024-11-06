@@ -5,10 +5,20 @@ import {
   Infinite,
   Lucas,
   Megabyte,
+  Tmdb,
   UmaHotel,
 } from "../assets/images";
 
 export const proyects = [
+  {
+    name: "TMDB",
+    description:
+      "Un catálogo de películas donde los usuarios pueden consultar las películas más populares, top de estreno, buscar películas y ver detalles de ellas. Todos los datos se obtienen de la api The Movie DB.",
+    image: Tmdb,
+    urlDemo: "https://tmdb-andevfront.netlify.app/",
+    urlRepo: "https://github.com/andevfront/the_movie_db-react",
+    category: "personal",
+  },
   {
     name: "Fake Store",
     description:
