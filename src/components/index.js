@@ -3,6 +3,7 @@ export * from "./layout/Header";
 export * from "./layout/Loader";
 export * from "./layout/MobileMenu";
 export * from "./ui/GoTopButton";
+export * from "./ui/Loading";
 export * from "./ui/ProyectCard";
 export * from "./ui/ProyectList";
 export * from "./ui/TechIcon";

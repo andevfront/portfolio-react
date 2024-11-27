@@ -13,6 +13,8 @@ import {
   PortfolioSection,
   ResumeSection,
 } from "../views";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const LayoutDefault = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -48,6 +50,7 @@ export const LayoutDefault = () => {
       <MobileMenu isOpen={isMenuOpen} onClose={closeMenu} />
       <GotTopButton />
       <Loader isLoading={isLoading} />
+      <ToastContainer />
       <Footer />
     </>
   );
