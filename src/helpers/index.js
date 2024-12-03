@@ -1,1 +1,2 @@
-export * from './calculateAge';
+export * from "./animationsVariants";
+export * from "./calculateAge";

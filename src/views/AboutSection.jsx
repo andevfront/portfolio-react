@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import { FiDownload } from "react-icons/fi";
 import { ProfileImg } from "../assets/images";
-import { calculateAge } from "../helpers";
+import { calculateAge, fadeLeft, fadeRight } from "../helpers";
 import { TechIconsList } from "../components";
 
 export const AboutSection = () => {
@@ -13,7 +14,15 @@ export const AboutSection = () => {
           </h2>
         </div>
         <div className="grid grid-cols-6 gap-6">
-          <div className="col-span-6 sm:col-span-3">
+          <motion.div
+            className="col-span-6 sm:col-span-3"
+            initial="initial"
+            whileInView="animate"
+            variants={fadeRight}
+            viewport={{
+              once: true,
+            }}
+          >
             <div className="flex flex-wrap gap-12">
               <figure className="relative z-[6] h-fit w-[150px] flex-shrink-0 before:absolute before:left-[16px] before:top-[-16px] before:-z-[5] before:h-full before:w-full before:border-[5px] before:border-main-500 before:content-[''] xl:w-[250px]">
                 <img className="w-full object-cover" src={ProfileImg} alt="" />
@@ -61,13 +70,21 @@ export const AboutSection = () => {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="col-span-6 sm:col-span-3">
+          </motion.div>
+          <motion.div
+            className="col-span-6 sm:col-span-3"
+            initial="initial"
+            whileInView="animate"
+            variants={fadeLeft}
+            viewport={{
+              once: true,
+            }}
+          >
             <h3 className="text-[20px] font-bold text-white">
               Tecnologías y herramientas
             </h3>
             <TechIconsList />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

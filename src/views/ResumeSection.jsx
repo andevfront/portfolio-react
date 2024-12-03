@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { fadeUp } from "../helpers";
+
 export const ResumeSection = () => {
   return (
     <section className="bg-[#0A1527] py-36" id="resume">
@@ -10,7 +13,15 @@ export const ResumeSection = () => {
         <div className="grid grid-cols-6 gap-6 xl:gap-20">
           <div className="col-span-6 sm:col-span-3">
             <h3 className="mb-5 text-[20px] font-bold text-white">Educación</h3>
-            <div className="group border-l-2 border-l-main-500 bg-[#0d1a31] p-10">
+            <motion.div
+              className="group border-l-2 border-l-main-500 bg-[#0d1a31] p-10"
+              initial="initial"
+              whileInView="animate"
+              variants={fadeUp}
+              viewport={{
+                once: true,
+              }}
+            >
               <h4 className="relative mb-1 text-[16px] font-bold text-main-500 before:absolute before:-left-[51px] before:top-1 before:h-5 before:w-5 before:rounded-full before:border-2 before:border-main-500 before:bg-[#0d1a31] before:transition-colors before:duration-300 before:content-[''] before:group-hover:bg-main-500">
                 Diseño Estático de Front-End
               </h4>
@@ -23,13 +34,21 @@ export const ResumeSection = () => {
                 HTML5 y estilizar con CSS3, integrando interactividad con
                 JavaScript.
               </p>
-            </div>
+            </motion.div>
           </div>
           <div className="col-span-6 sm:col-span-3">
             <h3 className="mb-5 flex text-[20px] font-bold text-white">
               Experiencia
             </h3>
-            <div className="group border-b border-l-2 border-b-slate-700 border-l-main-500 bg-[#0d1a31] p-10">
+            <motion.div
+              className="group border-b border-l-2 border-b-slate-700 border-l-main-500 bg-[#0d1a31] p-10"
+              initial="initial"
+              whileInView="animate"
+              variants={fadeUp}
+              viewport={{
+                once: true,
+              }}
+            >
               <h4 className="relative mb-1 text-[16px] font-bold text-main-500 before:absolute before:-left-[51px] before:top-1 before:h-5 before:w-5 before:rounded-full before:border-2 before:border-main-500 before:bg-[#0d1a31] before:transition-colors before:duration-300 before:content-[''] before:group-hover:bg-main-500">
                 Desarrolladora Web Front-End
               </h4>
@@ -41,8 +60,16 @@ export const ResumeSection = () => {
                 usando HTML, CSS, JavaScript, Tailwind CSS y React. Estas
                 plantillas fueron creadas para ser subidas a Template Monster.
               </p>
-            </div>
-            <div className="group border-b border-l-2 border-b-slate-700 border-l-main-500 bg-[#0d1a31] p-10">
+            </motion.div>
+            <motion.div
+              className="group border-b border-l-2 border-b-slate-700 border-l-main-500 bg-[#0d1a31] p-10"
+              initial="initial"
+              whileInView="animate"
+              variants={fadeUp}
+              viewport={{
+                once: true,
+              }}
+            >
               <h4 className="relative mb-1 text-[16px] font-bold text-main-500 before:absolute before:-left-[51px] before:top-1 before:h-5 before:w-5 before:rounded-full before:border-2 before:border-main-500 before:bg-[#0d1a31] before:transition-colors before:duration-300 before:content-[''] before:group-hover:bg-main-500">
                 Desarrolladora Web Front-End
               </h4>
@@ -54,8 +81,16 @@ export const ResumeSection = () => {
                 conocimientos, integrando diversas APIs para crear aplicaciones
                 interactivas y funcionales.
               </p>
-            </div>
-            <div className="group border-l-2 border-l-main-500 bg-[#0d1a31] p-10">
+            </motion.div>
+            <motion.div
+              className="group border-l-2 border-l-main-500 bg-[#0d1a31] p-10"
+              initial="initial"
+              whileInView="animate"
+              variants={fadeUp}
+              viewport={{
+                once: true,
+              }}
+            >
               <h4 className="relative mb-1 text-[16px] font-bold text-main-500 before:absolute before:-left-[51px] before:top-1 before:h-5 before:w-5 before:rounded-full before:border-2 before:border-main-500 before:bg-[#0d1a31] before:transition-colors before:duration-300 before:content-[''] before:group-hover:bg-main-500">
                 Desarrolladora Web Front-End
               </h4>
@@ -68,7 +103,7 @@ export const ResumeSection = () => {
                 desarrollador backend en PHP y Laravel 9 para integrar el diseño
                 y un formulario de reserva con redirección a WhatsApp.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

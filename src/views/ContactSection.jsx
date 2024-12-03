@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { FaMapLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io5";
@@ -7,6 +8,7 @@ import { toast } from "react-toastify";
 import { FaCheckCircle } from "react-icons/fa";
 
 import "../assets/styles/toast.css";
+import { fadeLeft, fadeRight } from "../helpers";
 
 export const ContactSection = () => {
   const form = useRef();
@@ -71,7 +73,15 @@ export const ContactSection = () => {
           </h2>
         </div>
         <div className="grid grid-cols-6 gap-6 xl:gap-20">
-          <div className="col-span-6 sm:col-span-3">
+          <motion.div
+            className="col-span-6 sm:col-span-3"
+            initial="initial"
+            whileInView="animate"
+            variants={fadeRight}
+            viewport={{
+              once: true,
+            }}
+          >
             <h3 className="mb-5 text-[20px] font-bold text-white">
               Pongámonos en contacto
             </h3>
@@ -106,8 +116,16 @@ export const ContactSection = () => {
                 </a>
               </div>
             </ul>
-          </div>
-          <div className="col-span-6 sm:col-span-3">
+          </motion.div>
+          <motion.div
+            className="col-span-6 sm:col-span-3"
+            initial="initial"
+            whileInView="animate"
+            variants={fadeLeft}
+            viewport={{
+              once: true,
+            }}
+          >
             <form ref={form} onSubmit={sendEmail}>
               <div className="relative w-full">
                 <input
@@ -172,7 +190,7 @@ export const ContactSection = () => {
                 )}
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
