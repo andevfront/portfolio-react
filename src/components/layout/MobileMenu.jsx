@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-scroll";
 import { AnimatePresence, motion } from "framer-motion";
-import { BsXLg, BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsXLg, BsGithub } from "react-icons/bs";
 
 export const MobileMenu = ({ isOpen, onClose }) => {
   const handleResize = ({ target }) => {
@@ -124,11 +124,8 @@ export const MobileMenu = ({ isOpen, onClose }) => {
                 </ul>
               </nav>
               <div className="flex gap-5 text-white">
-                <a href="#">
+                <a href="https://github.com/andevfront" target="_blank">
                   <BsGithub className="text-2xl" />
-                </a>
-                <a href="#">
-                  <BsLinkedin className="text-2xl" />
                 </a>
               </div>
             </div>

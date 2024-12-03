@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FaMapLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
-import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
+import { IoLogoGithub } from "react-icons/io5";
 import { Loading } from "../components";
 import { toast } from "react-toastify";
 import { FaCheckCircle } from "react-icons/fa";
@@ -86,7 +86,7 @@ export const ContactSection = () => {
                 <div className="flex items-center justify-center rounded-full bg-[#122039] p-3 text-main-500">
                   <FaPhone className="h-6 w-6" />
                 </div>
-                <a href="tel:+542284673568">+54 2284 673568</a>
+                <span>+54 2284 673568</span>
               </li>
               <li className="mb-4 flex items-center gap-3 text-white">
                 <div className="flex items-center justify-center rounded-full bg-[#122039] p-3 text-main-500">
@@ -98,16 +98,11 @@ export const ContactSection = () => {
               </li>
               <div className="mt-8 flex items-center gap-2">
                 <a
-                  href="#"
+                  href="https://github.com/andevfront"
                   className="flex items-center justify-center rounded-full bg-[#122039] p-[10px] text-white transition-colors duration-300 hover:bg-[#181717]"
+                  target="_blank"
                 >
                   <IoLogoGithub className="h-5 w-5" />
-                </a>
-                <a
-                  href="#"
-                  className="flex items-center justify-center rounded-full bg-[#122039] p-[10px] text-white transition-colors duration-300 hover:bg-[#0A66C2]"
-                >
-                  <IoLogoLinkedin className="h-5 w-5" />
                 </a>
               </div>
             </ul>

@@ -1,6 +1,14 @@
+import { useEffect } from "react";
+import PropTypes from "prop-types";
 import { AnimatePresence, motion } from "framer-motion";
 
 export const Loader = ({ isLoading }) => {
+  useEffect(() => {
+    isLoading
+      ? document.body.classList.add("overflow-hidden")
+      : document.body.classList.remove("overflow-hidden");
+  }, [isLoading]);
+
   return (
     <AnimatePresence>
       {isLoading && (
@@ -13,11 +21,15 @@ export const Loader = ({ isLoading }) => {
           <div className="flex flex-col items-center gap-2">
             <h2 className="text-2xl font-black text-main-500">Ayelén</h2>
             <div className="mt-2 flex h-1 w-40 gap-1 overflow-hidden rounded bg-[#919ea4]">
-              <div className="animate-loader h-full w-20 bg-main-500"></div>
+              <div className="h-full w-20 animate-loader bg-main-500"></div>
             </div>
           </div>
         </motion.div>
       )}
     </AnimatePresence>
   );
+};
+
+Loader.propTypes = {
+  isLoading: PropTypes.bool.isRequired,
 };

@@ -1,5 +1,5 @@
 import { ReactTyped } from "react-typed";
-import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
+import { IoLogoGithub } from "react-icons/io5";
 import { HeroSvg } from "../assets/images";
 
 export const HomeSection = () => {
@@ -29,22 +29,11 @@ export const HomeSection = () => {
           </p>
           <div className="flex items-center gap-3">
             <a
-              href="#"
+              href="https://github.com/andevfront"
               className="transition-colors duration-300 hover:text-white"
-            >
-              <IoLogoInstagram className="h-6 w-6" />
-            </a>
-            <a
-              href="#"
-              className="transition-colors duration-300 hover:text-white"
+              target="_blank"
             >
               <IoLogoGithub className="h-6 w-6" />
-            </a>
-            <a
-              href="#"
-              className="transition-colors duration-300 hover:text-white"
-            >
-              <IoLogoLinkedin className="h-6 w-6" />
             </a>
           </div>
         </div>
